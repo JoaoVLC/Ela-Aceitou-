@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 211, 226, 0.22), transparent 32rem),
+    linear-gradient(135deg, #141725 0%, #24243a 55%, #11141e 100%);
+  color: #fff7fb;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#game-shell {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 12px;
+}
+
+canvas {
+  display: block;
+  width: min(calc(100vw - 24px), 960px) !important;
+  height: auto !important;
+  max-height: calc(100vh - 24px);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border: 4px solid #ffd9e6;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.48);
+  background: #10131f;
+}
